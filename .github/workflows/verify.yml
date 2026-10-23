@@ -1,0 +1,13 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "release-readiness-lab verify workflow ran successfully"
